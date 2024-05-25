@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
+import readlineSync from 'readline-sync'
 
 const counRound = 3;
 
@@ -7,7 +7,6 @@ export default (description, getQuestionAndAnswer) => {
   const name = readlineSync.question('May I have your name? ');
 
   console.log(`Hello, ${name}!`);
-
   console.log(description);
 
   for (let i = 0; i < counRound; i++) {

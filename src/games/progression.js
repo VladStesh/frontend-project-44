@@ -9,7 +9,7 @@ const getQuestionAndAnswer = () => {
   const count = randomInteger(5, 10);
 
   const progression = [];
-  for (let i = 0; i <= count; i++) {
+  for (let i = 0; i <= count; i += 1) {
     progression.push(start + i * step);
   }
 

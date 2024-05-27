@@ -9,7 +9,7 @@ export default (description, getQuestionAndAnswer) => {
   console.log(`Hello, ${name}!`);
   console.log(description);
 
-  for (let i = 0; i < counRound; i++) {
+  for (let i = 0; i < counRound; i += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`);
 
@@ -21,6 +21,8 @@ export default (description, getQuestionAndAnswer) => {
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
       console.log(`Let's try again, ${name}!`);
+      return;
     }
   }
+  console.log(`Congratulations, ${name}!`);
 };

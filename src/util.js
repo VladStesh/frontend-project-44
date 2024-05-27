@@ -28,7 +28,7 @@ export const isPrime = (num) => {
   }
 
   const s = Math.sqrt(num);
-  for (let i = 2; i <= s; i++) {
+  for (let i = 2; i <= s; i += 1) {
     if (num % i === 0) {
       return false;
     }

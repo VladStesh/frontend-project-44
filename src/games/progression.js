@@ -1,4 +1,4 @@
-import game from '../index.js';
+import runGame from '../../index.js';
 import { randomInteger } from '../util.js';
 
 const description = 'What number is missing in the progression?';
@@ -23,5 +23,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-  game(description, getQuestionAndAnswer);
+  runGame(description, getQuestionAndAnswer);
 };

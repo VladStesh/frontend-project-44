@@ -1,4 +1,4 @@
-import game from '../index.js';
+import runGame from '../../index.js';
 import { randomInteger, isPrime } from '../util.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -10,5 +10,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-  game(description, getQuestionAndAnswer);
+  runGame(description, getQuestionAndAnswer);
 };
